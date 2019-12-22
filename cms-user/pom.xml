@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.xupan.cms</groupId>
+		<artifactId>cms-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../cms-parent/pom.xml</relativePath>
+	</parent>
+	<artifactId>cms-user</artifactId>
+	<packaging>jar</packaging>
+
+	<name>cms-user</name>
+	<url>http://maven.apache.org</url>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.3.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+	    	<artifactId>cms-core</artifactId>
+	    	<version>${project.version}</version>
+		</dependency>
+		 <dependency>
+	      <groupId>org.xupan.basic</groupId>
+	      <artifactId>basic-common</artifactId>
+	    </dependency>
+	</dependencies>
+</project>
